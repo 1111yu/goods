@@ -4,7 +4,7 @@ import './goods.css'
 const GoodsState = props => {
   // console.log(props);
   const {value} = props
-  const [nowTime,setNowTime] = useState(0)
+  const [nowTime,setNowTime] = useState(new Date().getTime())
    
   useEffect(()=>{
     const timer = setTimeout(()=>{
